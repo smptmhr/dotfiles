@@ -9,3 +9,4 @@ projects/
 sessions/
 shell-snapshots/
 notifier.pid
+stats-cache.json
