@@ -46,3 +46,6 @@ autoload -Uz compinit && compinit
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export PATH="/opt/homebrew/bin:$PATH"
+
+## PC個別で設定したい設定は".zshrc.local"に書く
+[ -f ~/dotfiles/.zshrc.local ] && source ~/dotfiles/.zshrc.local
