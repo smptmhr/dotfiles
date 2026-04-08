@@ -1,0 +1,11 @@
+backups/
+cache/
+file-history/
+history.jsonl
+mcp-needs-auth-cache.json
+plans/
+policy-limits.json
+projects/
+sessions/
+shell-snapshots/
+notifier.pid
