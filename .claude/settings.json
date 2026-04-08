@@ -224,13 +224,24 @@
         ]
       }
     ],
+    "PreToolUse": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cancel-notify.sh"
+          }
+        ]
+      }
+    ],
     "Stop": [
       {
         "matcher": "",
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -sender com.apple.Terminal -title 'Claude Code' -message 'タスク完了です'"
+            "command": "~/.claude/hooks/cancel-notify.sh; /opt/homebrew/bin/terminal-notifier -title 'Claude Code' -message 'タスク完了です' -sound Glass"
           }
         ]
       }
@@ -241,7 +252,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "terminal-notifier -sender com.apple.Terminal -title 'Claude Code' -message 'ユーザ確認待ちです'"
+            "command": "~/.claude/hooks/notify-wait.sh"
           }
         ]
       }
